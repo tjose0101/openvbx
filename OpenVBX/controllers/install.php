@@ -112,10 +112,10 @@ class Install extends Controller {
 						'Supported: '.PHP_VERSION,
 						'You must be running at least PHP '.$this->min_php_version.'; you are using ' . PHP_VERSION);
 
-		$this->add_test(function_exists('mysql_connect'),
-						'MySQL',
-						'supported',
-						'missing');
+	//	$this->add_test(function_exists('mysql_connect'),
+	//					'MySQL',
+	//					'supported',
+	//					'missing');
 
 		$this->add_test(function_exists('simplexml_load_file'),
 						'SimpleXML',
